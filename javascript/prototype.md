@@ -56,17 +56,17 @@ HaHaHa
 
         而向上找原型，就是通过__proto__这个方法，所以：
 ```javascript
-        Dad.__proto__ === mankind.prototype  //true
+Dad.__proto__ === mankind.prototype  //true
 ```
         当然，mankind.prototype也是一个对象，当然也有一个__proto__方法，通过这个方法，也是可以找到他再上一级的原型，所以：
 ```javascript
-        mankind.prototype.__proto__ === Object.prototype //true
+mankind.prototype.__proto__ === Object.prototype //true
 ```
         这也是对的。因为函数的祖先是Object，所以就是指向Object.prototype这个原型 。
         当然，再往上找，就是空了。
- ```javascript       
-        Object.prototype.__proto__  === null  //true 
- ```       
+```javascript       
+Object.prototype.__proto__  === null  //true 
+```       
         所以各个原型组织起来，就是一条原型链了：
 
         Dad ---> mankind.prototype ---> Object.prototype ---> null<br>
@@ -87,11 +87,11 @@ function mankind(name){
 
         没错，所以我们也可以有mankind.__proto__这个方法访问原型:
 ```javascript
-        mankind.__proto__ === Function.prototype  //true
+mankind.__proto__ === Function.prototype  //true
 ```
         当然，Function.prototype 也是可以通过__proto__方法访问原型：
 ```javascript
-        Function.prototype.__proto__ === Object.prototype //true
+Function.prototype.__proto__ === Object.prototype //true
 ```
         所以也有这样的原型链：
 
@@ -131,7 +131,7 @@ BaBa
         这就是鸡和鸡蛋的问题了。
 
         最最后，放上一张网络上解释很清楚的原型链图，再结合我上面的啰嗦，相信就很清楚容易明白了。
-        <center> ![prototype](https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1498028312&di=5dc545ec45d571ebaf82edc6bfd4adae&src=http://images2015.cnblogs.com/blog/952839/201608/952839-20160807171533231-172025675.png "原型链图")</center> 
+        <div align=center><img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1498028312&di=5dc545ec45d571ebaf82edc6bfd4adae&src=http://images2015.cnblogs.com/blog/952839/201608/952839-20160807171533231-172025675.png" alt="原型链图" /></div>
 
 
 

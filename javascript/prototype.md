@@ -55,19 +55,22 @@ HaHaHa
         Dad对象这个实例的原型，就是mankind.prototype这个遗传基因。
 
         而向上找原型，就是通过__proto__这个方法，所以：
-
-        Dad.__proto__ === mankind.prototype  这是对的。
-
+```javascript
+        Dad.__proto__ === mankind.prototype  //true
+```
         当然，mankind.prototype也是一个对象，当然也有一个__proto__方法，通过这个方法，也是可以找到他再上一级的原型，所以：
-
-        mankind.prototype.__proto__ === Object.prototype 这也是对的。因为函数的祖先是Object，所以就是指向Object.prototype这个原型 。
-
-        当然，再往上找，Object.prototype.__proto__  === null  就是空了。
-
+```javascript
+        mankind.prototype.__proto__ === Object.prototype //true
+```
+        这也是对的。因为函数的祖先是Object，所以就是指向Object.prototype这个原型 。
+        当然，再往上找，就是空了。
+ ```javascript       
+        Object.prototype.__proto__  === null  //true 
+ ```       
         所以各个原型组织起来，就是一条原型链了：
 
         Dad ---> mankind.prototype ---> Object.prototype ---> null<br>
-
+ 
         回过头来，其实mankind.prototype这个对象除了__proto__这个方法外，还有一个constructor的方法，因为mankind是构造函数，所以特有的这个方法，所以通过这个方法，可以访问到自身这个构造函数：
 ```javascript
 //打印一下mankind.prototype.constructor
@@ -83,13 +86,13 @@ function mankind(name){
         既然说函数是对象(函数对象Function，普通对象Object，Function是继承于Object的)，那么前面的构造函数mankind可以有prototype属性，也应该有__proto__这个方法？
 
         没错，所以我们也可以有mankind.__proto__这个方法访问原型:
-
-        mankind.__proto__ === Function.prototype  也是对的。
-
+```javascript
+        mankind.__proto__ === Function.prototype  //true
+```
         当然，Function.prototype 也是可以通过__proto__方法访问原型：
-
-        Function.prototype.__proto__ === Object.prototype 这也是对的。
-
+```javascript
+        Function.prototype.__proto__ === Object.prototype //true
+```
         所以也有这样的原型链：
 
         mankind ---> Function.prototype ---> Object.prototype ---> null<br>

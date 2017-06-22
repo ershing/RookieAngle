@@ -5,3 +5,4 @@
 
 ## JavaScript
 ### 1.[原型和原型链](https://github.com/ershing/RookieAngle/blob/master/javascript/prototype.md "原型和原型链")
+### 2.[从堆栈内存到执行上下文](https://github.com/ershing/RookieAngle/blob/master/javascript/executioncontext.md "原型和原型链")

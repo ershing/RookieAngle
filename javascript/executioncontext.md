@@ -66,5 +66,4 @@ father(33);
 
         当然，道理都是一样的。
 
-
         <div align=center><img src="http://davidshariff.com/blog/wp-content/uploads/2012/06/es1.gif" alt="执行上下文堆栈" /></div>

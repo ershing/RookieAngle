@@ -66,5 +66,5 @@ father(33);
 
         当然，道理都是一样的。
 
-        还是那句，迟来先上岸的感觉。就好像下面的图这样（图片引用自网络）。
+
         <div align=center><img src="http://davidshariff.com/blog/wp-content/uploads/2012/06/es1.gif" alt="执行上下文堆栈" /></div>

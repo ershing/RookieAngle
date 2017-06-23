@@ -65,5 +65,4 @@ father(33);
         实际情况可能不是图的那样简单，可能清出到EC2那一层的时候，还没调用完这个函数，又调用其它函数，其它的执行上下文又接着压上去了。
 
         当然，道理都是一样的。
-
-       <div align=center><img src="http://davidshariff.com/blog/wp-content/uploads/2012/06/es1.gif" alt="执行上下文堆栈" /></div>
+        <div align=center><img src="http://davidshariff.com/blog/wp-content/uploads/2012/06/es1.gif" alt="执行上下文堆栈" /></div>

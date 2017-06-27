@@ -8,6 +8,7 @@
 ### 1.[原型和原型链](https://github.com/ershing/RookieAngle/blob/master/javascript/prototype.md "原型和原型链")
 ### 2.[从堆栈内存到执行上下文](https://github.com/ershing/RookieAngle/blob/master/javascript/executioncontext.md "从堆栈内存到执行上下文")
 ### 3.[变量对象和活动对象](https://github.com/ershing/RookieAngle/blob/master/javascript/javascriptvariableobject.md "变量对象和活动对象")
+### 4.[作用域和作用域链](https://github.com/ershing/RookieAngle/blob/master/javascript/scopechain.md "作用域和作用域链")
 
 ## 菜鸟角度
 所有文章均由本作者原创，经查询多篇资料并结合个人理解编写。<br>

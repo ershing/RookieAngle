@@ -14,12 +14,12 @@
         先来一个构造函数：
 ```javascript
 //构造一个人类
-function mankind(name){
+function Mankind(name){
     this.name = name;
 }
 
 //实例化一个Dad对象
-var Dad = new mankind('BaBa');
+var Dad = new Mankind('BaBa');
 
 //看看Dad的名字是什么
 console.log(Dad.name);
@@ -31,18 +31,18 @@ BaBa
 
         **只要是函数，就会有一个 prototype 属性，可以理解为子代的原型（遗传基因）；只要是对象，就会有一个__proto__方法，可以理解为向上寻找原型的方法。**
 
-        所以上面的构造函数中，mankind这个构造函数，就会有一个prototype属性（不是函数没有），可以这样访问：mankind.prototype，当然也可以给传统基因添加其他特征：
+        所以上面的构造函数中，Mankind这个构造函数，就会有一个prototype属性（不是函数没有），可以这样访问：Mankind.prototype，当然也可以给传统基因添加其他特征：
 ```javascript
 //还是上面的构造函数
-function mankind(name){
+function Mankind(name){
     this.name = name;
 }
 
 //还是实例化一个Dad对象
-var Dad = new mankind('BaBa');
+var Dad = new Mankind('BaBa');
 
 //然后给构造函数添加特征
-mankind.prototype.sayHello = 'HaHaHa';
+Mankind.prototype.sayHello = 'HaHaHa';
 
 //看看Dad有没有sayHello特征
 console.log(Dad.sayHello);
@@ -50,17 +50,17 @@ console.log(Dad.sayHello);
 //打印结果
 HaHaHa
 ```
-        从结果可以看出，Dad本来没有的sayHello特征，你给构造函数添加了，Dad也会拥有这个特征了，其实这就是从原型链上找到这个属性了。
+        从结果可以看出，Dad本来没有的sayHello特征，你给Dad的祖先添加了，Dad也会拥有这个特征了，其实这就是从原型链上找到这个属性了。
 
-        Dad对象这个实例的原型，就是mankind.prototype这个遗传基因。
+        Dad对象这个实例的原型，就是Mankind.prototype这个遗传基因。
 
         而向上找原型，就是通过__proto__这个方法，所以：
 ```javascript
-Dad.__proto__ === mankind.prototype  //true
+Dad.__proto__ === Mankind.prototype  //true
 ```
-        当然，mankind.prototype也是一个对象，当然也有一个__proto__方法，通过这个方法，也是可以找到他再上一级的原型，所以：
+        当然，Mankind.prototype也是一个对象，当然也有一个__proto__方法，通过这个方法，也是可以找到他再上一级的原型，所以：
 ```javascript
-mankind.prototype.__proto__ === Object.prototype //true
+Mankind.prototype.__proto__ === Object.prototype //true
 ```
         这也是对的。因为函数的祖先是Object，所以就是指向Object.prototype这个原型 。
         当然，再往上找，就是空了。
@@ -69,25 +69,25 @@ Object.prototype.__proto__  === null  //true
 ```       
         所以各个原型组织起来，就是一条原型链了：
 
-        Dad ---> mankind.prototype ---> Object.prototype ---> null   **可以看到从对象开始的原型链的规律**<br>
+        Dad ---> Mankind.prototype ---> Object.prototype ---> null   **可以看到从对象开始的原型链的规律**<br>
  
-        回过头来，其实mankind.prototype这个对象除了__proto__这个方法外，还有一个constructor的方法，因为mankind是构造函数，所以特有的这个方法，所以通过这个方法，可以访问到自身这个构造函数：
+        回过头来，其实Mankind.prototype这个对象除了__proto__这个方法外，还有一个constructor的方法，因为Mankind是函数，所以有这个方法，所以通过这个方法，可以访问到自身这个函数：
 ```javascript
-//打印一下mankind.prototype.constructor
-console.log(mankind.prototype.constructor);
+//打印一下Mankind.prototype.constructor
+console.log(Mankind.prototype.constructor);
 
 //打印结果
-function mankind(name){
+function Mankind(name){
     this.name = name;
 }
 ```
         说到这里，相信已经类比得很清楚了。然后又会有一个疑问：
 
-        既然说函数是对象(函数对象Function，普通对象Object，Function是继承于Object的)，那么前面的构造函数mankind可以有prototype属性，也应该有__proto__这个方法？
+        既然说函数是对象(函数对象Function，普通对象Object，Function是继承于Object的)，那么前面的构造函数Mankind可以有prototype属性，也应该有__proto__这个方法？
 
-        没错，所以我们也可以有mankind.__proto__这个方法访问原型:
+        没错，所以我们也可以有Mankind.__proto__这个方法访问原型:
 ```javascript
-mankind.__proto__ === Function.prototype  //true
+Mankind.__proto__ === Function.prototype  //true
 ```
         当然，Function.prototype 也是可以通过__proto__方法访问原型：
 ```javascript
@@ -95,7 +95,7 @@ Function.prototype.__proto__ === Object.prototype //true
 ```
         所以也有这样的原型链：
 
-        mankind ---> Function.prototype ---> Object.prototype ---> null   **可以看到从函数开始的原型链的规律**<br>
+        Mankind ---> Function.prototype ---> Object.prototype ---> null   **可以看到从函数开始的原型链的规律**<br>
 
         当然了，我们既然有一个实例的对象Dad，当然也可以再延生下去，生一个Son来继承Dad的啦：
 ```javascript
@@ -116,7 +116,7 @@ BaBa
 ```
         所以这条原型链是这样的：
 
-        Son ---> Dad ---> mankind.prototype ---> Object.prototype ---> null   **对照从对象开始的原型链的规律**<br>
+        Son ---> Dad ---> Mankind.prototype ---> Object.prototype ---> null   **对照从对象开始的原型链的规律**<br>
 
         通过上面的一大顿啰嗦，相信已经很清楚了，最后再说一下鸡和鸡蛋的问题：
 

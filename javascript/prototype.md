@@ -69,7 +69,7 @@ Object.prototype.__proto__  === null  //true
 ```       
         所以各个原型组织起来，就是一条原型链了：
 
-        Dad ---> mankind.prototype ---> Object.prototype ---> null<br>
+        Dad ---> mankind.prototype ---> Object.prototype ---> null   **可以看到从对象开始的原型链的规律**<br>
  
         回过头来，其实mankind.prototype这个对象除了__proto__这个方法外，还有一个constructor的方法，因为mankind是构造函数，所以特有的这个方法，所以通过这个方法，可以访问到自身这个构造函数：
 ```javascript
@@ -95,7 +95,7 @@ Function.prototype.__proto__ === Object.prototype //true
 ```
         所以也有这样的原型链：
 
-        mankind ---> Function.prototype ---> Object.prototype ---> null<br>
+        mankind ---> Function.prototype ---> Object.prototype ---> null   **可以看到从函数开始的原型链的规律**<br>
 
         当然了，我们既然有一个实例的对象Dad，当然也可以再延生下去，生一个Son来继承Dad的啦：
 ```javascript
@@ -122,7 +122,7 @@ BaBa
 
         上面既然说到有Object.prototype，而且prototype是函数才有的，所以可以访问到Object这个构造函数，可以用Object.prototype.constructor这个方法，当然构造函数是继承于函数对象的，所以构造函数原型又是Function.prototype，所以也有这样的一条原型链：
 
-        Object ---> Function.prototype ---> Object.prototype ---> null<br>
+        Object ---> Function.prototype ---> Object.prototype ---> null   **对照从函数开始的原型链的规律（这里的Object是构造函数）**<br>
 
         或者表示为：
 

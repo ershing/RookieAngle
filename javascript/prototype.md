@@ -116,7 +116,7 @@ BaBa
 ```
         所以这条原型链是这样的：
 
-        Son ---> Dad ---> mankind.prototype ---> Object.prototype ---> null<br>
+        Son ---> Dad ---> mankind.prototype ---> Object.prototype ---> null   **对照从对象开始的原型链的规律<br>
 
         通过上面的一大顿啰嗦，相信已经很清楚了，最后再说一下鸡和鸡蛋的问题：
 

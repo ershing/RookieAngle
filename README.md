@@ -15,7 +15,7 @@
 ### 7.[闭包](https://github.com/ershing/RookieAngle/blob/master/javascript/closure.md "this的指向")
 
 ## Node.js
-### 1.单线程与多线程
+### 1.单线程
 
 
 ## 菜鸟角度

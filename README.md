@@ -2,7 +2,7 @@
         很多IT大神为我们讲解知识的时候，虽然句句是精华，但是对于我们这些IT菜鸟来说，都有点晦涩难懂，有点看不下去。很多时候他们在说一个问题的时候，都会连带一些其他的概念，然而我们这些菜鸟对于很多语言底层知识，都是不太懂的。<br>
         我相信大部分人一开始的时候，都是先学会用一门语言，直到遇到难题的时候，才去找原因，而这个时候，才是去学会掌握一门语言。<br>
         在此，结合我这个IT菜鸟的经验，创建一个从菜鸟角度出发的仓库，以一个IT菜鸟的角度，从一些底层知识出发，用类比的方法，由浅入深，慢慢去来理解各类问题。<br>
-        所有文章均利用个人空闲时间整理撰写，不定期发表。
+        所有文章均利用个人空闲时间整理撰写，不定期发表。<br>
 
 
 ## JavaScript
@@ -12,16 +12,17 @@
 ### 4.[作用域和作用域链](https://github.com/ershing/RookieAngle/blob/master/javascript/scopechain.md "作用域和作用域链")
 ### 5.[this的指向](https://github.com/ershing/RookieAngle/blob/master/javascript/aboutthis.md "this的指向")
 ### 6.[bind、call、apply等函数的用法](https://github.com/ershing/RookieAngle/blob/master/javascript/bindcallapply.md "bind、call、apply等函数的用法")
-### 7.[闭包](https://github.com/ershing/RookieAngle/blob/master/javascript/closure.md "this的指向")
+### 7.[闭包](https://github.com/ershing/RookieAngle/blob/master/javascript/closure.md "this的指向")<br>
+
 
 ## Node.js
-### 1.单线程
+### 1.[单线程](https://github.com/ershing/RookieAngle/blob/master/Node.js/singlethread.md "单线程")<br>
 
 
 ## 菜鸟角度
 所有文章均由本作者原创，经查询多篇资料并结合个人理解编写。<br>
 如有疑问或错误，欢迎各位批评指正，在下定必及时更正。<br>
-如若看后有所获益，欢迎star一下，已是对在下的十分鼓励。
+如若看后有所获益，欢迎star一下，已是对在下的十分鼓励。<br>
 
 
 ## License

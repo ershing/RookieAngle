@@ -12,12 +12,14 @@
 ### 4.[作用域和作用域链](https://github.com/ershing/RookieAngle/blob/master/javascript/scopechain.md "作用域和作用域链")
 ### 5.[this的指向](https://github.com/ershing/RookieAngle/blob/master/javascript/aboutthis.md "this的指向")
 ### 6.[bind、call、apply等函数的用法](https://github.com/ershing/RookieAngle/blob/master/javascript/bindcallapply.md "bind、call、apply等函数的用法")
-### 7.[闭包](https://github.com/ershing/RookieAngle/blob/master/javascript/closure.md "this的指向")<br>
-
+### 7.[闭包](https://github.com/ershing/RookieAngle/blob/master/javascript/closure.md "this的指向")
+### 8.toString( )和valueOf( )（撰写中）
+### 9.比较运算符和逻辑运算符（撰写中）<br>
 
 ## Node.js
-### 1.[单线程](https://github.com/ershing/RookieAngle/blob/master/Node.js/singlethread.md "单线程")<br>
-
+### 1.[单线程](https://github.com/ershing/RookieAngle/blob/master/Node.js/singlethread.md "单线程")
+### 2.字符编码（撰写中）
+### 3.Buffer对象（撰写中）<br>
 
 ## 菜鸟角度
 所有文章均由本作者原创，经查询多篇资料并结合个人理解编写。<br>

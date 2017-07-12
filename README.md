@@ -13,7 +13,7 @@
 ### 5.[this的指向](https://github.com/ershing/RookieAngle/blob/master/javascript/aboutthis.md "this的指向")
 ### 6.[bind、call、apply等函数的用法](https://github.com/ershing/RookieAngle/blob/master/javascript/bindcallapply.md "bind、call、apply等函数的用法")
 ### 7.[闭包](https://github.com/ershing/RookieAngle/blob/master/javascript/closure.md "this的指向")
-### 8.toString( )和valueOf( )（撰写中）
+### 8.[toString( )和valueOf( )](https://github.com/ershing/RookieAngle/blob/master/javascript/tostringandvalueof.md "toString( )和valueOf( )")
 ### 9.比较运算符和逻辑运算符（撰写中）<br>
 
 ## Node.js

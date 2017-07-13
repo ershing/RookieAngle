@@ -18,7 +18,7 @@
 
 ## Node.js
 ### 1.[单线程](https://github.com/ershing/RookieAngle/blob/master/Node.js/singlethread.md "单线程")
-### 2.字符编码（撰写中）
+### 2.[字符编码](https://github.com/ershing/RookieAngle/blob/master/Node.js/encoding.md "字符编码")
 ### 3.Buffer对象（撰写中）<br>
 
 ## 菜鸟角度

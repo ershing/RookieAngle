@@ -31,4 +31,4 @@
 
         其实字符编码，就是用一个整数来表示某一个字符的一种方式，而且不会重复，至于你选择用一个字节（二进制），两个字节（二进制），还是不同进制（十进制、十六进制）来表示，就是不同的字符编码了。
 
-<div align=center><img src="http://img3.imgtn.bdimg.com/it/u=1855107654,1762545927&fm=26&gp=0.jpg"/></div>
+<div align=center><img src="http://pic.666pic.com/thumbs/1000423/41131991/api_thumb_450.jpg" alt="字符编码" /></div>

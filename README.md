@@ -14,7 +14,7 @@
 ### 6.[bind、call、apply等函数的用法](https://github.com/ershing/RookieAngle/blob/master/javascript/bindcallapply.md "bind、call、apply等函数的用法")
 ### 7.[闭包](https://github.com/ershing/RookieAngle/blob/master/javascript/closure.md "this的指向")
 ### 8.[toString( )和valueOf( )](https://github.com/ershing/RookieAngle/blob/master/javascript/tostringandvalueof.md "toString( )和valueOf( )")
-### 9.比较运算符和逻辑运算符（撰写中）<br>
+### 9.运算符（撰写中）<br>
 
 ## Node.js
 ### 1.[单线程](https://github.com/ershing/RookieAngle/blob/master/Node.js/singlethread.md "单线程")

@@ -97,7 +97,7 @@ var example = {
 };
 alert(example);// "23"
 
-//例子三 只改写 toString 方法
+//例子三 只改写 valueOf 方法
 var example = {
     valueOf:function(){
         return '32';

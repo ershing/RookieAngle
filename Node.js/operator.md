@@ -1,4 +1,5 @@
 # 关于javascript中的操作符
+###### 我的菜鸟仓库地址： [点击跳转查看其他相关文章](https://github.com/ershing/RookieAngle "菜鸟仓库")
 ###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/javascriptoperator/ "点击我")
 
         javascript的操作符（或者叫运算符）有很多个，关于它们具体的介绍和优先级排序可以参考[MDN文档](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)。

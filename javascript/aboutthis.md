@@ -1,4 +1,5 @@
 # 关于javascript中this的指向
+###### 我的菜鸟仓库地址： [点击跳转查看其他相关文章](https://github.com/ershing/RookieAngle "菜鸟仓库")
 ###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/aboutthis/ "点击我")
 
         学习javascript，必不可少的肯定要理解this的指向。要学习this指向之前，就要先理解了我前面写的几篇文章，会更容易理解this的指向。

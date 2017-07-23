@@ -1,4 +1,5 @@
 # 关于javascript中的原型和原型链
+###### 我的菜鸟仓库地址： [点击跳转查看其他相关文章](https://github.com/ershing/RookieAngle "菜鸟仓库")
 ###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/javascriptprototype/ "点击我")
 
         关于javascript中的原型和原型链，可能都会想到一个词“prototype”，而实际里面藏的是什么东西，才是大家应该要掌握的。

@@ -14,7 +14,8 @@
 ### 6.[bind、call、apply等函数的用法](https://github.com/ershing/RookieAngle/blob/master/javascript/bindcallapply.md "bind、call、apply等函数的用法")
 ### 7.[闭包](https://github.com/ershing/RookieAngle/blob/master/javascript/closure.md "this的指向")
 ### 8.[toString( )和valueOf( )](https://github.com/ershing/RookieAngle/blob/master/javascript/tostringandvalueof.md "toString( )和valueOf( )")
-### 9.[操作符](https://github.com/ershing/RookieAngle/blob/master/Node.js/operator.md "操作符")<br>
+### 9.[操作符](https://github.com/ershing/RookieAngle/blob/master/javascript/operator.md "操作符")
+### 10.[深拷贝和浅拷贝](https://github.com/ershing/RookieAngle/blob/master/javascript/copy.md "深拷贝和浅拷贝")<br>
 
 ## Node.js
 ### 1.[单线程](https://github.com/ershing/RookieAngle/blob/master/Node.js/singlethread.md "单线程")

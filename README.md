@@ -9,7 +9,7 @@
 ### * [关于javascript中的从堆栈内存到执行上下文](https://github.com/ershing/RookieAngle/blob/master/javascript/executioncontext.md "关于javascript中的从堆栈内存到执行上下文")
 ### * [关于javascript中的变量对象和活动对象](https://github.com/ershing/RookieAngle/blob/master/javascript/javascriptvariableobject.md "关于javascript中的变量对象和活动对象")
 ### * [关于javascript中的作用域和作用域链](https://github.com/ershing/RookieAngle/blob/master/javascript/scopechain.md "关于javascript中的作用域和作用域链")
-### 5.[关于javascript中this的指向](https://github.com/ershing/RookieAngle/blob/master/javascript/aboutthis.md "关于javascript中this的指向")
+### * [关于javascript中this的指向](https://github.com/ershing/RookieAngle/blob/master/javascript/aboutthis.md "关于javascript中this的指向")
 ### * [关于javascript中的bind、call、apply等函数的用法](https://github.com/ershing/RookieAngle/blob/master/javascript/bindcallapply.md "关于javascript中的bind、call、apply等函数的用法")
 ### * [关于javascript中的闭包](https://github.com/ershing/RookieAngle/blob/master/javascript/closure.md "关于javascript中的闭包")
 ### * [关于javascript中的toString( )和valueOf( )](https://github.com/ershing/RookieAngle/blob/master/javascript/tostringandvalueof.md "关于javascript中的toString( )和valueOf( )")

@@ -14,6 +14,7 @@
 ### * [关于javascript中的闭包](https://github.com/ershing/RookieAngle/blob/master/javascript/closure.md "关于javascript中的闭包")
 ### * [关于javascript中的toString( )和valueOf( )](https://github.com/ershing/RookieAngle/blob/master/javascript/tostringandvalueof.md "关于javascript中的toString( )和valueOf( )")
 ### * [关于javascript中的操作符](https://github.com/ershing/RookieAngle/blob/master/Node.js/operator.md "关于javascript中的操作符")<br>
+### * [关于javascript中的深拷贝和浅拷贝](https://github.com/ershing/RookieAngle/blob/master/javascript/copy.md "关于javascript中的深拷贝和浅拷贝")
 ## Node.js
 ### * [关于Node.js的单线程](https://github.com/ershing/RookieAngle/blob/master/Node.js/singlethread.md "关于Node.js的单线程")
 ### * [关于Node.js的字符编码](https://github.com/ershing/RookieAngle/blob/master/Node.js/encoding.md "关于Node.js的字符编码")

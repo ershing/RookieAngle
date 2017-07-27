@@ -5,21 +5,18 @@
         所有文章均利用个人空闲时间整理撰写，不定期发表。<br>
 
 
-## JavaScript
-### 1.[原型和原型链](https://github.com/ershing/RookieAngle/blob/master/javascript/prototype.md "原型和原型链")
-### 2.[从堆栈内存到执行上下文](https://github.com/ershing/RookieAngle/blob/master/javascript/executioncontext.md "从堆栈内存到执行上下文")
-### 3.[变量对象和活动对象](https://github.com/ershing/RookieAngle/blob/master/javascript/javascriptvariableobject.md "变量对象和活动对象")
-### 4.[作用域和作用域链](https://github.com/ershing/RookieAngle/blob/master/javascript/scopechain.md "作用域和作用域链")
-### 5.[this的指向](https://github.com/ershing/RookieAngle/blob/master/javascript/aboutthis.md "this的指向")
-### 6.[bind、call、apply等函数的用法](https://github.com/ershing/RookieAngle/blob/master/javascript/bindcallapply.md "bind、call、apply等函数的用法")
-### 7.[闭包](https://github.com/ershing/RookieAngle/blob/master/javascript/closure.md "this的指向")
-### 8.[toString( )和valueOf( )](https://github.com/ershing/RookieAngle/blob/master/javascript/tostringandvalueof.md "toString( )和valueOf( )")
-### 9.[操作符](https://github.com/ershing/RookieAngle/blob/master/Node.js/operator.md "操作符")<br>
-
-## Node.js
-### 1.[单线程](https://github.com/ershing/RookieAngle/blob/master/Node.js/singlethread.md "单线程")
-### 2.[字符编码](https://github.com/ershing/RookieAngle/blob/master/Node.js/encoding.md "字符编码")
-### 3.[Buffer对象](https://github.com/ershing/RookieAngle/blob/master/Node.js/buffer.md "Buffer对象")<br>
+### * [关于javascript中的原型和原型链](https://github.com/ershing/RookieAngle/blob/master/javascript/prototype.md "关于javascript中的原型和原型链")
+### * [关于javascript中的从堆栈内存到执行上下文](https://github.com/ershing/RookieAngle/blob/master/javascript/executioncontext.md "关于javascript中的从堆栈内存到执行上下文")
+### * [关于javascript中的变量对象和活动对象](https://github.com/ershing/RookieAngle/blob/master/javascript/javascriptvariableobject.md "关于javascript中的变量对象和活动对象")
+### * [关于javascript中的作用域和作用域链](https://github.com/ershing/RookieAngle/blob/master/javascript/scopechain.md "关于javascript中的作用域和作用域链")
+### 5.[关于javascript中this的指向](https://github.com/ershing/RookieAngle/blob/master/javascript/aboutthis.md "关于javascript中this的指向")
+### * [关于javascript中的bind、call、apply等函数的用法](https://github.com/ershing/RookieAngle/blob/master/javascript/bindcallapply.md "关于javascript中的bind、call、apply等函数的用法")
+### * [关于javascript中的闭包](https://github.com/ershing/RookieAngle/blob/master/javascript/closure.md "关于javascript中的闭包")
+### * [关于javascript中的toString( )和valueOf( )](https://github.com/ershing/RookieAngle/blob/master/javascript/tostringandvalueof.md "关于javascript中的toString( )和valueOf( )")
+### * [关于javascript中的操作符](https://github.com/ershing/RookieAngle/blob/master/Node.js/operator.md "关于javascript中的操作符")
+### * [关于Node.js的单线程](https://github.com/ershing/RookieAngle/blob/master/Node.js/singlethread.md "关于Node.js的单线程")
+### * [关于Node.js的字符编码](https://github.com/ershing/RookieAngle/blob/master/Node.js/encoding.md "关于Node.js的字符编码")
+### * [关于Node.js的Buffer对象](https://github.com/ershing/RookieAngle/blob/master/Node.js/buffer.md "关于Node.js的Buffer对象")<br>
 
 ## 菜鸟角度
 所有文章均由本作者原创，经查询多篇资料并结合个人理解编写。<br>

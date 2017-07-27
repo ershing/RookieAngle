@@ -79,7 +79,11 @@ var example = {
 };
 console.log(+example);// 23
 ```
-        通过例子一和例子二的比较，我们可以知道，一元加操作符在操作对象的时候，会先调用对象的valueOf方法来转换，最后再用Number( )方法转换，而通过例子二和例子三的比较，我们可以知道，如果只改写了toString方法，对象则会调用toString方法，证明valueOf的优先级比toString高。
+        通过例子一和例子二的比较，我们可以知道，一元加操作符在操作对象的时候，会先调用对象的valueOf方法来转换，最后再用Number( )方法转换，而通过例子二和例子三的比较，我们可以知道，如果只改写了toString方法，对象则会调用toString方法，证明valueOf的优先级比toString高。上面例子是单独对对象上使用一元加操作符，但是，如果是字符串加对象呢？
+```javascript
+console.log('test'+{});   //"test[object Object]"
+```
+        这个很明显，对象和字符串相加，肯定转换为字符串啊，所以调用了对象的toString方法，变为[object Object]了。
 
         好了，如果是alert呢？
 ```javascript
@@ -106,6 +110,6 @@ var example = {
 };
 alert(example);// "[object Object]"
 ```
-        虽然上面结果我用双引号了，但是你知道弹窗不会将字符串的双引号表示出来的。通过上面几个例子，我们就知道了，alert它对待对象，就是调用它的toString( )方法，和valueOf方法无关。
+        虽然上面结果我用双引号了，但是你知道弹窗不会将字符串的双引号表示出来的。通过上面几个例子，我们就知道了，alert它对待对象，就和字符串和对象相加一样，就是调用它的toString( )方法，和valueOf方法无关。
 
-        好了，总结一下，一般用操作符的时候，需要对对象进行转换，如果对象存在valueOf或toString改写的话，就先调用改写的方法，valueOf更高级，如果没有被改写，则直接调用对象原型的valueOf方法。如果是弹窗的话，直接调用toString方法。至于其他情况，待续……
+        好了，总结一下，一般用操作符单独对对象进行转换的时候，如果对象存在valueOf或toString改写的话，就先调用改写的方法，valueOf更高级，如果没有被改写，则直接调用对象原型的valueOf方法。如果是弹窗的话，直接调用toString方法。至于其他情况，待续……

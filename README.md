@@ -17,7 +17,8 @@
 ### * [关于javascript中的深拷贝和浅拷贝](https://github.com/ershing/RookieAngle/blob/master/javascript/copy.md "关于javascript中的深拷贝和浅拷贝")
 ### * [关于Node.js的单线程](https://github.com/ershing/RookieAngle/blob/master/Node.js/singlethread.md "关于Node.js的单线程")
 ### * [关于Node.js的字符编码](https://github.com/ershing/RookieAngle/blob/master/Node.js/encoding.md "关于Node.js的字符编码")
-### * [关于Node.js的Buffer对象](https://github.com/ershing/RookieAngle/blob/master/Node.js/buffer.md "关于Node.js的Buffer对象")<br>
+### * [关于Node.js的Buffer对象](https://github.com/ershing/RookieAngle/blob/master/Node.js/buffer.md "关于Node.js的Buffer对象")
+### * [关于Node.js中的模块机制](https://github.com/ershing/RookieAngle/blob/master/Node.js/module.md "关于Node.js中的模块机制")<br>
 
 ## 菜鸟角度
 所有文章均由本作者原创，经查询多篇资料并结合个人理解编写。<br>

@@ -23,6 +23,9 @@
 ## database
 ### * [数据库](https://github.com/ershing/RookieAngle/blob/master/database/introduction.md "数据库")<br>
 
+## Python
+### * [Node.js简单爬虫爬取python一些函数](https://github.com/ershing/RookieAngle/blob/master/python/topython.md "Node.js简单爬虫爬取python一些函数")<br>
+
 ## 菜鸟角度
 所有文章均由本作者原创，经查询多篇资料并结合个人理解编写。<br>
 如有疑问或错误，欢迎各位批评指正，在下定必及时更正。<br>

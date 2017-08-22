@@ -10,13 +10,13 @@
 
         所以，这次爬东西也只是玩玩，爬来的函数也方便以后可以查询。
 
-        废话少说，这次主要爬取一下菜鸟教程网站http://www.runoob.com/，这个网站特别适合广大菜鸟学习，学习内容很多。
+        废话少说，这次主要爬取一下菜鸟教程网站[http://www.runoob.com/](http://www.runoob.com/)，这个网站特别适合广大菜鸟学习，学习内容很多。
 
         这次用到Node.js的几个模块：superagent用来发出请求，cheerio用来处理数据，async用来解决异步回调，pug模板引擎。
 
         大概流程：
 
-        1.爬取网站的python3栏目（http://www.runoob.com/python3/python3-tutorial.html）下的数字、字符串、列表、字典等相关页面。
+        1.爬取网站的[python3栏目](http://www.runoob.com/python3/python3-tutorial.html)下的数字、字符串、列表、字典等相关页面。
 
         2.提取页面中的函数表单数据。
 

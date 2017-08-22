@@ -1,4 +1,6 @@
-# Python的一些相关函数## number相关的函数
+# Python的一些相关函数
+
+## number相关的函数
 |函数|返回值 ( 描述 )|
 |:---|:---|
 |[abs(x)](http://www.runoob.com/python3/python3-func-number-abs.html)|返回数字的绝对值，如abs(-10) 返回 10|

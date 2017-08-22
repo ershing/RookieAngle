@@ -1,0 +1,17 @@
+{
+  "name": "catcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "catcher.js",
+  "scripts": {
+    "test": "nodemon catcher.js"
+  },
+  "author": "ershing",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "cheerio": "^1.0.0-rc.2",
+    "pug": "^2.0.0-rc.2",
+    "superagent": "^3.5.2"
+  }
+}

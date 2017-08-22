@@ -1,6 +1,5 @@
 const superagent = require('superagent');
 const cheerio = require('cheerio');
-const { getTimeFromStage } = require('../utils');
 const { parallel } = require('async');
 
 function catchData(callback) {

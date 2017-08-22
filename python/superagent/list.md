@@ -1,4 +1,4 @@
-# number相关的函数
+# Python的一些相关函数## number相关的函数
 |函数|返回值 ( 描述 )|
 |:---|:---|
 |[abs(x)](http://www.runoob.com/python3/python3-func-number-abs.html)|返回数字的绝对值，如abs(-10) 返回 10|
@@ -41,7 +41,7 @@
 |[radians(x)](http://www.runoob.com/python3/python3-func-number-radians.html)|将角度转换为弧度|
 
 
-# string相关的函数
+## string相关的函数
 |序号|方法|描述|
 |:---|:---|:---|
 |1|[capitalize()](http://www.runoob.com/python3/python3-string-capitalize.html)|将字符串的第一个字符转换为大写|
@@ -86,7 +86,7 @@
 |40|[isdecimal()](http://www.runoob.com/python3/python3-string-isdecimal.html)|检查字符串是否只包含十进制字符，如果是返回 true，否则返回 false。|
 
 
-# list相关的函数
+## list相关的函数
 |序号|方法|描述|
 |:---|:---|:---|
 |1|[len(list)](http://www.runoob.com/python3/python3-att-list-len.html)|列表元素个数|
@@ -110,7 +110,7 @@
 |11|[list.copy()](http://www.runoob.com/python3/python3-att-list-copy.html)|复制列表|
 
 
-# dict相关的函数
+## dict相关的函数
 |序号|方法|描述|
 |:---|:---|:---|
 |1|[radiansdict.clear()](http://www.runoob.com/python3/python3-att-dictionary-clear.html)|删除字典内所有元素 |

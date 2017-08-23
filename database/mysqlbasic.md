@@ -60,19 +60,19 @@ WHERE ershing_id=3;
 
         上面这些就是最基本的一些操作，至于其他的一些常用语句语法还有：
 
-Like：结合%来模糊搜索关键字，例如：WHERE  ershing_name  LiKE  '%SQL%'
+        Like：结合%来模糊搜索关键字，例如：WHERE  ershing_name  LiKE  '%SQL%'
 
-IN:多个条件，例如：SELECT  *  FROM  ershing WHERE ershing_id  IN (3,1,5)
+        IN:多个条件，例如：SELECT  *  FROM  ershing WHERE ershing_id  IN (3,1,5)
 
-UNION：多个结果集合，例如：SELECT …FROM  …UNION  SELECT …FROM…
+        UNION：多个结果集合，例如：SELECT …FROM  …UNION  SELECT …FROM…
 
-LIMIT：辅助分页，例如：SELECT * FROM   ershing  LIMIT 5,10
+        LIMIT：辅助分页，例如：SELECT * FROM   ershing  LIMIT 5,10
 
-ORDER BY：排序，例如：SELECT  *  FROM  ershing  ORDER  BY  'create_time'  DESC;
+        ORDER BY：排序，例如：SELECT  *  FROM  ershing  ORDER  BY  'create_time'  DESC;
 
-GROUP BY：分组，例如SELECT ershing_name, COUNT(*) FROM ershing GROUP BY ershing_name;
+        GROUP BY：分组，例如SELECT ershing_name, COUNT(*) FROM ershing GROUP BY ershing_name;
 
-多表连接：INNER JOIN（两表交集）、LEFT JOIN（左表基础上加两表交集的右表其余字段）、RIGHT JOIN（右表基础上加左表交集的其余字段）
+        多表连接：INNER JOIN（两表交集）、LEFT JOIN（左表基础上加两表交集的右表其余字段）、RIGHT JOIN（右表基础上加左表交集的其余字段）
 
         上面这些，相信足以应付85%以上的数据库操作要求了，关键还是具体问题具体分析，用好SQL语句还是很有必要的。
 

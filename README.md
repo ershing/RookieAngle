@@ -21,7 +21,8 @@
 ### * [关于Node.js中的模块机制](https://github.com/ershing/RookieAngle/blob/master/Node.js/module.md "关于Node.js中的模块机制")<br>
 
 ## database
-### * [数据库](https://github.com/ershing/RookieAngle/blob/master/database/introduction.md "数据库")### * [MySQL基本语法](https://github.com/ershing/RookieAngle/blob/master/database/mysqlbasic.md "MySQL基本语法")<br>
+### * [数据库](https://github.com/ershing/RookieAngle/blob/master/database/introduction.md "数据库")
+### * [MySQL基本语法](https://github.com/ershing/RookieAngle/blob/master/database/mysqlbasic.md "MySQL基本语法")<br>
 
 ## Python
 ### * [Node.js简单爬虫爬取python一些函数](https://github.com/ershing/RookieAngle/blob/master/python/topython.md "Node.js简单爬虫爬取python一些函数")<br>

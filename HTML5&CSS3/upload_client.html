@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+    <title>Document</title>
+    <style>
+        #progress_bar {
+            margin: 10px 0;
+            padding: 3px;
+            border: 1px solid #000;
+            font-size: 14px;
+            clear: both;
+            opacity: 0;
+            -moz-transition: opacity 1s linear;
+            -o-transition: opacity 1s linear;
+            -webkit-transition: opacity 1s linear;
+        }
+
+        #progress_bar.loading {
+            opacity: 1.0;
+        }
+
+        #progress_bar .percent {
+            background-color: #99ccff;
+            height: auto;
+            width: 0;
+        }
+    </style>
+</head>
+
+<body>
+    图片:<img src="" id=imgId>
+    <input type="file" id="files" name="file" />
+    <div id="progress_bar" style="width:20%">
+        <div class="percent">0%</div>
+    </div>
+    <input id="uploadBtn" type="button" value="上传">
+    <input id="getimgBtn" type="button" value="获取">
+    <script>
+        //获取文件和按钮
+        var input = document.getElementById('files');
+        var upload = document.getElementById('uploadBtn');
+        var host = 'http://localhost:10013/attachment/upload'
+        //监听click事件，触发fileUpload
+        upload.onclick = fileUpload;
+        getimgBtn.onclick = fileGet;
+        function fileGet(evt) {
+            console.log("OK");
+            $.get(host+'/base_data_service/pic/show_pic',{ pic_id:"28f56df0-78e0-11e7-99e9-e3b916f27aec" },function(data,status){
+                console.log("Data: " + data + "；nStatus: " + status);
+                $("#imgId").attr('src',data); 
+            }); 
+        }
+        function fileUpload(evt) {
+            // 基本参数声明
+            var block = 1 * 1024 * 1024; // 每次读取1M
+            // 当前文件对象
+            var file;
+            // 文件总大小
+            var fileSize;
+            // 文件类型
+            var fileType;
+
+            //首先获取文件信息
+            file = input.files[0];
+            fileSize = file.size;
+            fileType = file.type;
+            // 文件标识符
+            var guid = localStorage.getItem('guid') ? localStorage.getItem('guid') : undefined;
+
+            // 当前已读取大小
+            var fileLoaded = localStorage.getItem('fileLoaded') ? Number(localStorage.getItem('fileLoaded')) : 0;
+
+            // 读取文件总次数
+            var total = Math.ceil(fileSize / block);
+            // 当前文件读取次数
+            var count = fileLoaded !== 0 ? Math.floor(fileLoaded / block) : 0;
+
+            // 文件名称
+            var fileName = localStorage.getItem('fileName') ? localStorage.getItem('fileName') : file.name;
+            if (fileName != file.name) {
+                //如果要上传的文件不是保存的文件资料，则重新开始上传
+                fileName = file.name;
+                guid = undefined;
+                localStorage.removeItem('guid');
+                count = 0;
+                fileLoaded = 0;
+            }
+            else {
+                //如果要上传的文件是保存的文件资料，则判断是否已上传完毕
+                if (fileLoaded === fileSize) {
+                    alert('该文件已上传成功，请不要重复上传');
+                    return;
+                }
+            }
+
+            //开始切割文件
+            cutBlob();
+
+            // 每次切割一个block
+            function cutBlob() {
+                var blob;
+                if (file.webkitSlice) {
+                    blob = file.webkitSlice(fileLoaded, fileLoaded + block);
+                } else if (file.mozSlice) {
+                    blob = file.mozSlice(fileLoaded, fileLoaded + block);
+                } else if (file.slice) {
+                    blob = file.slice(fileLoaded, fileLoaded + block);
+                } else {
+                    alert('不支持分段读取！');
+                    return false;
+                }
+                count++;
+                //切割完交给loadHandler处理
+                loadHandler(blob);
+            }
+
+
+            // 每个blob切割完调用
+            function loadHandler(blob) {
+                //计算切割比例        
+                fileLoaded += blob.size;
+                var percent = fileLoaded / fileSize;
+
+                //上传数据        
+                //实例化FormData对象并放入内容        
+                var formData = new FormData();
+                //先查看是否已存入guid（是否存在文件需要断点续传）
+                if (guid) {
+                    formData.append("guid", guid);
+                }
+                formData.append("total", total);
+                formData.append("block", block);
+                formData.append("count", count);
+                console.log('第', formData.get('count'), '次传送');
+                formData.append("fileSize", fileSize);
+                formData.append("fileName", fileName);
+                formData.append("fileType", fileType);
+                formData.append("fileLoaded", fileLoaded);
+                formData.append("fileBlob", blob);
+                var tes = formData.get("fileBlob");
+                console.log('传送文件大小：', tes.size, 'bytes');
+                console.log('传送文件已load：', fileLoaded, 'bytes');
+                $.ajax({
+                    url: host+'/base_data_service/pic/upload',
+                    type: 'POST',
+                    data: formData,
+                    cache: false,//设置为false，上传文件不需要缓存。
+                    contentType: false,//设置为false。因为是由form表单构造的FormData对象，且已经声明了属性enctype="multipart/form-data"，所以这里设置为false。
+                    processData: false,//设置为false。因为data值是FormData对象，不需要对数据做处理。
+                    success: function (data) {
+                        if (data.guid) {
+                            localStorage.setItem('guid', data.guid);
+                            guid = localStorage.getItem('guid');
+                            localStorage.setItem('fileLoaded', data.fileLoaded);
+                            fileLoad = data.fileLoaded;
+                            localStorage.setItem('fileName', data.fileName);
+                        }
+                        if (percent < 1) {
+                            percent = (percent * 100).toFixed(1) + '%';
+                            //console.log('切割文件进度为：', percent);
+                            console.log('存储文件进度为：', data.writingPercentage);
+                            console.log('----------------------------------');
+                            // 继续切割下一块
+                            cutBlob();
+                        } else {
+                            // 结束
+                            percent = 1;
+                            percent = (percent * 100).toFixed(1) + '%';
+                            //console.log('读取文件进度为：', percent);
+                            console.log('已完成文件存储', data.writingPercentage);
+                        }
+                        return;
+                    },
+                    error: function (data) {
+                        console.log('上传出现错误', data);
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>

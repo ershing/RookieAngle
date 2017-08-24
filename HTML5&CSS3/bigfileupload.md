@@ -12,11 +12,12 @@
 <input id="uploadBtn" type="button" value="上传">
 ```
         然后开始script标签内容了，先DOM获取文件和按钮、并设置上传的地址：
-
+```javascript
 var input = document.getElementById('files');
 var upload = document.getElementById('uploadBtn');
 //自己建立一个测试的服务器，后面会提到后端的代码
-var host = 'http://localhost:10000/attachment/upload'  
+var host = 'http://localhost:10000/attachment/upload'
+```
         好了，获取到文件之后，就要开始切割了，切割考虑到不同浏览器的兼容性问题，所以要做个判断：
 ```javascript
 var blob;

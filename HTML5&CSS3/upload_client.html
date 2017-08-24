@@ -33,28 +33,17 @@
 </head>
 
 <body>
-    图片:<img src="" id=imgId>
     <input type="file" id="files" name="file" />
-    <div id="progress_bar" style="width:20%">
-        <div class="percent">0%</div>
-    </div>
     <input id="uploadBtn" type="button" value="上传">
-    <input id="getimgBtn" type="button" value="获取">
     <script>
         //获取文件和按钮
         var input = document.getElementById('files');
         var upload = document.getElementById('uploadBtn');
-        var host = 'http://localhost:10013/attachment/upload'
+        var host = 'http://localhost:10013/attachment/upload' //这里配置自己创建的服务器上传地址
         //监听click事件，触发fileUpload
         upload.onclick = fileUpload;
         getimgBtn.onclick = fileGet;
-        function fileGet(evt) {
-            console.log("OK");
-            $.get(host+'/base_data_service/pic/show_pic',{ pic_id:"28f56df0-78e0-11e7-99e9-e3b916f27aec" },function(data,status){
-                console.log("Data: " + data + "；nStatus: " + status);
-                $("#imgId").attr('src',data); 
-            }); 
-        }
+
         function fileUpload(evt) {
             // 基本参数声明
             var block = 1 * 1024 * 1024; // 每次读取1M

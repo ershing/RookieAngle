@@ -1,9 +1,13 @@
+
+/**
+ * 此文件只是作为对上传数据做处理的模块，并不包含建立服务器及路由跳转
+ */
+
 var express = require('express');
 var fs = require('fs');
 var path = require('path');
 var apibase = require('api-base');
-var dirConfig = require('../../../upload_config.json');//文件配置
-var log = require('logger');
+var dirConfig = require('./upload_config.json');//文件配置,此处需要自行配置
 var mkdirp = require('mkdirp');
 
 //解析 multipart/form-data
@@ -11,17 +15,18 @@ var Busboy = require('busboy');
 
 //生成文件标识符的函数
 function generateGuid() {
-    return apibase.uuid_v1();
+    return 'xxxxxxxx-xxxx-3xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8);
+        return v.toString(16);
+    });
 }
 
 //文件上传
 function upload(req, res) {
-    log('info', '/base_data_service/attachment/upload', '接口调用', req.body);
     //获取参数
     var fileName;
     var fileSize;
     var fileType;
-    // var fileBlob;
     var start = 0;
     var block = 0;
     var count = 0;
@@ -44,7 +49,6 @@ function upload(req, res) {
     }
     catch (e) {
         console.error(e);
-        log('error', '/base_data_service/attachment/upload', '接口调用', req.body);
     }
 
     var busboy = new Busboy({ headers: req.headers, encoding: 'utf8' });
@@ -103,42 +107,7 @@ function upload(req, res) {
                 res.send(resObj);
             }
             if (percentage >= 1) {
-                //如果为图片则生成缩略图
-                if (fileType.indexOf('image') > -1) {
-                    //新增webp格式的文件
-                    //生成webp名字
-                    //var save_webp_path = path.join(targetFileDirPath, guid + "_" + dirConfig.picResizeWidth + ".webp")
 
-                    var Jimp = require("jimp");
-
-                    // var sharp = require('sharp');
-                    // sharp(myTarget)
-                    //     .resize(dirConfig.picResizeWidth, dirConfig.picResizeHeight)
-                    //     .toFile(save_webp_path, function (err, info) {
-                    //         if (err) {
-                    //             throw err;
-                    //         }
-                    //     });
-
-                    //新增png格式的文件
-                    var save_png_path = path.join(targetFileDirPath, guid + "_" + dirConfig.picResizeWidth + ".png")
-                    Jimp.read(myTarget, function (err, lenna) {
-                        if (err) throw err;
-                        lenna.resize(dirConfig.picResizeWidth, dirConfig.picResizeHeight)         // resize
-                            .quality(60)                                                         // set JPEG quality
-                            //.greyscale()                                                        // set greyscale
-                            .write(save_png_path);                                            // save
-                    });
-
-
-                    // sharp(myTarget)
-                    //     .resize(dirConfig.picResizeWidth, dirConfig.picResizeHeight)
-                    //     .toFile(save_png_path, function (err, info) {
-                    //         if (err) {
-                    //             throw err;
-                    //         }
-                    //     });
-                }
                 var resObj = {
                     guid: guid,
                     fileName: fileName,
@@ -147,7 +116,7 @@ function upload(req, res) {
                     hasWrittenBytes: hasWrittenBytes
                 };
                 var rowInfo = {
-                    attament_id: apibase.uuid_v4(),
+                    attament_id: generateGuid(),
                     attament_title: fileName,
                     attament_path: path.join(targetFileDirPath, guid + "." + suffix),
                     attament_ext: fileType,
@@ -157,14 +126,8 @@ function upload(req, res) {
                         dir: fileDir,
                         base: guid + "." + suffix
                     }).replace(/\\/g, '/')
-                }
-                var model = require("../../model");
-                model.attament.create(rowInfo).then(function(result){
-                    var resobj = apibase.get_status("成功");
-                    resobj.data = rowInfo;
-                    res.send(resobj);
-                    return;
-                }); 
+                };
+                res.send(rowInfo);
             }
             return;
         });
@@ -180,19 +143,15 @@ function upload(req, res) {
         }
         if (fieldname === 'total') {
             total = Number(val);
-            //console.log('total:', total, 'times');
         }
         if (fieldname === 'guid') {
             guid = val;
-            //console.log(val);
         }
         if (fieldname === 'block') {
             block = Number(val);
-            //console.log('block:', block, 'bytes');
         }
         if (fieldname === 'count') {
             count = Number(val);
-            //console.log('count:', count, 'times');
             //生成guid
             if (count === 1) {
                 guid = generateGuid();
@@ -204,11 +163,9 @@ function upload(req, res) {
         }
         if (fieldname === 'fileName') {
             fileName = val;
-            //console.log(fileName);
         }
         if (fieldname === 'fileType') {
             fileType = val;
-            //console.log(fileType);
         }
         if (fieldname === 'fileLoaded') {
             fileLoaded = Number(val);

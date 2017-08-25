@@ -28,7 +28,8 @@
 ### * [MySQL基本语法](https://github.com/ershing/RookieAngle/blob/master/database/mysqlbasic.md "MySQL基本语法")<br>
 
 ## Python
-### * [Node.js简单爬虫爬取python一些函数](https://github.com/ershing/RookieAngle/blob/master/python/topython.md "Node.js简单爬虫爬取python一些函数")<br>
+### * [Node.js简单爬虫爬取python一些函数](https://github.com/ershing/RookieAngle/blob/master/python/topython.md "Node.js简单爬虫爬取python一些函数")
+### * [python中函数的参数类型](https://github.com/ershing/RookieAngle/blob/master/python/pythonfuncparams.md "python中函数的参数类型")<br>
 
 ## 菜鸟角度
 所有文章均由本作者原创，经查询多篇资料并结合个人理解编写。<br>

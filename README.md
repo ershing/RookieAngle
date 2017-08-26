@@ -26,7 +26,8 @@
 ## database
 ### * [数据库](https://github.com/ershing/RookieAngle/blob/master/database/introduction.md "数据库")
 ### * [MySQL基本语法](https://github.com/ershing/RookieAngle/blob/master/database/mysqlBasic.md "MySQL基本语法")
-### * [数据库中的事务](https://github.com/ershing/RookieAngle/blob/master/database/transaction.md "数据库中的事务")<br>
+### * [数据库中的事务](https://github.com/ershing/RookieAngle/blob/master/database/transaction.md "数据库中的事务")
+### * [数据库中的分类搜索](https://github.com/ershing/RookieAngle/blob/master/database/sortSearch.md "数据库中的分类搜索")<br>
 
 ## Python
 ### * [Node.js简单爬虫爬取python一些函数](https://github.com/ershing/RookieAngle/blob/master/python/toPython.md "Node.js简单爬虫爬取python一些函数")

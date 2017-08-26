@@ -1,6 +1,6 @@
 # Node.js简单爬虫爬取python一些函数
 ###### 我的菜鸟仓库地址： [点击跳转查看其他相关文章](https://github.com/ershing/RookieAngle "菜鸟仓库")
-###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/nodejslovespython/ "点击我")
+###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/nodejs-loves-python/ "点击我")
 
         哈哈，是不是很坑爹的题目，用Node.js爬虫爬python的东西，还将文章放在了python栏目的下面了。
 

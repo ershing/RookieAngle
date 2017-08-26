@@ -1,6 +1,6 @@
 # 关于javascript中的深拷贝和浅拷贝
 ###### 我的菜鸟仓库地址： [点击跳转查看其他相关文章](https://github.com/ershing/RookieAngle "菜鸟仓库")
-###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/javascriptcopy/ "点击我")
+###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/javascript-copy/ "点击我")
 
         关于javascript中的深拷贝和浅拷贝，有很多种说法：深克隆浅克隆、深复制浅复制，其实说的都是那么一回事。在这里我就说深拷贝和浅拷贝。
 

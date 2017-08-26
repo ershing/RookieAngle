@@ -1,6 +1,6 @@
 # MySQL基本语法
 ###### 我的菜鸟仓库地址： [点击跳转查看其他相关文章](https://github.com/ershing/RookieAngle "菜鸟仓库")
-###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/mysqlbasic/ "点击我")
+###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/mysql-basic/ "点击我")
 
         MySQL作为最流行的关系型数据库之一，当然有它自身的代表性，语句简练清晰，当然了，我们写编程很多实际用到的都是orm工具，例如node中的sequelize，都对数据库做了很好的封装，屏蔽了对数据库的直接语句操作，不过，原生操作语句还是要掌握好的。
 

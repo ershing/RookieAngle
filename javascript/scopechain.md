@@ -1,6 +1,6 @@
 # 关于javascript中的作用域和作用域链
 ###### 我的菜鸟仓库地址： [点击跳转查看其他相关文章](https://github.com/ershing/RookieAngle "菜鸟仓库")
-###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/javascriptscopechain/ "点击我")
+###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/javascript-scope-chain/ "点击我")
 
         前面的文章说到， 执行上下文的创建阶段，主要有三个内容：
 

@@ -1,6 +1,6 @@
 # 关于Node.js的字符编码
 ###### 我的菜鸟仓库地址： [点击跳转查看其他相关文章](https://github.com/ershing/RookieAngle "菜鸟仓库")
-###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/nodejsencoding/ "点击我")
+###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/nodejs-encoding/ "点击我")
 
         关于字符编码，其实是非常基础的东西，不过，对于很多人来说，也没有弄清楚它是怎样来的一个东西，就只知道有很多不同的字符编码，常用的是utf-8，所以这里还是要说一下字符编码。
 

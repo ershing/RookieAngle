@@ -1,6 +1,6 @@
 # 关于javascript中的从堆栈内存到执行上下文
 ###### 我的菜鸟仓库地址： [点击跳转查看其他相关文章](https://github.com/ershing/RookieAngle "菜鸟仓库")
-###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/javascriptcontext/ "点击我")
+###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/javascript-context/ "点击我")
 
         
 

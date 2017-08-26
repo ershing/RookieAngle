@@ -1,6 +1,6 @@
 # 关于javascript中的toString()和valueOf()
 ###### 我的菜鸟仓库地址： [点击跳转查看其他相关文章](https://github.com/ershing/RookieAngle "菜鸟仓库")
-###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/tostringandvalueof/ "点击我")
+###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/tostring-and-valueof/ "点击我")
 
         关于javascript中的toString()和valueOf()两种方法，其实早在开始读红宝书（JavaScript高级程序设计）的时候已经有点困惑了，怎么搞出来这两个这么相似的东西，重点是很多时候它们得到的结果都是一样的，虽然之后不了了之觉得对应用没什么大影响就不管了，直到现在开始写博客的时候才回头看看这个问题。
 

@@ -1,6 +1,6 @@
 # python中函数的参数类型
 ###### 我的菜鸟仓库地址： [点击跳转查看其他相关文章](https://github.com/ershing/RookieAngle "菜鸟仓库")
-###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/pythonfuncparams/ "点击我")
+###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/python-func-params/ "点击我")
 
         学习python的过程中，少不了对函数的学习，而python中函数的参数又跟它自身数据类型有很大关系，所以有其自身的独特性，但是毕竟都是编程语言，跟其他语言都有相通的地方，这里就列举一下它的各种参数类型：
 

@@ -1,6 +1,6 @@
 # 关于Node.js的单线程
 ###### 我的菜鸟仓库地址： [点击跳转查看其他相关文章](https://github.com/ershing/RookieAngle "菜鸟仓库")
-###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/singlethread/ "点击我")
+###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/single-thread/ "点击我")
 
 <div align=center><img src="http://www.cc.ntu.edu.tw/chinese/epaper/0034/9/201509203409001.jpg" alt="Node.js" /></div>
 

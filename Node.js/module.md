@@ -1,6 +1,6 @@
 # 关于Node.js中的模块机制
 ###### 我的菜鸟仓库地址： [点击跳转查看其他相关文章](https://github.com/ershing/RookieAngle "菜鸟仓库")
-###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/nodejsmodule/ "点击我")
+###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/nodejs-module/ "点击我")
 
         为什么要模块，因为它对于代码的复用和解耦有着很关键的作用，关于node.js中的模块加载系统，其实是一个很简单的东西，它是 CommonJS规范的一种实现。所以在说Node.js的模块加载机制之前，先说一说javascript的三种常见的模块化规范：1、CommonJS；2、AMD；3、CMD。
 

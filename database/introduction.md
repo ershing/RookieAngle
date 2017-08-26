@@ -1,6 +1,6 @@
 # 数据库
 ###### 我的菜鸟仓库地址： [点击跳转查看其他相关文章](https://github.com/ershing/RookieAngle "菜鸟仓库")
-###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/introductionofdatabase/ "点击我")
+###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/introduction-of-database/ "点击我")
 
         什么是数据库，百度解释就是：数据库(Database)是按照数据结构来组织、存储和管理数据的仓库。见名思意，就是存库数据的仓库，由于数据的重要性日益突出，特别数据以几何级数量增长的今天，所以学好数据库技术显得尤其重要。
 

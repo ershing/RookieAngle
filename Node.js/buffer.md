@@ -1,6 +1,6 @@
 # 关于Node.js的Buffer对象
 ###### 我的菜鸟仓库地址： [点击跳转查看其他相关文章](https://github.com/ershing/RookieAngle "菜鸟仓库")
-###### 此文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/nodejsbuffer/ "点击我")
+###### 此文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/nodejs-buffer/ "点击我")
 
         关于Node.js的Buffer对象，其实和前面写的文章（[关于Node.js的字符编码](https://github.com/ershing/RookieAngle/blob/master/Node.js/encoding.md)）有很大关系。
 

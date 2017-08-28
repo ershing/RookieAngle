@@ -20,8 +20,9 @@
 ### * [关于Node.js的Buffer对象](https://github.com/ershing/RookieAngle/blob/master/Node.js/buffer.md "关于Node.js的Buffer对象")
 ### * [关于Node.js中的模块机制](https://github.com/ershing/RookieAngle/blob/master/Node.js/module.md "关于Node.js中的模块机制")<br>
 
-## HTML5&CSS3
-### * [大文件分块上传、断点续传](https://github.com/ershing/RookieAngle/blob/master/HTML5&CSS3/bigFileUpload.md "大文件分块上传、断点续传")<br>
+## WebFront
+### * [大文件分块上传、断点续传](https://github.com/ershing/RookieAngle/blob/master/WebFront/bigFileUpload.md "大文件分块上传、断点续传")
+### * [CSS样式参考配色](https://github.com/ershing/RookieAngle/blob/master/WebFront/easyColorMatch.md "CSS样式参考配色")<br>
 
 ## database
 ### * [数据库](https://github.com/ershing/RookieAngle/blob/master/database/introduction.md "数据库")

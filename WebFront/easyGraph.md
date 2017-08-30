@@ -99,7 +99,7 @@
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 }
 ```
-        还有其他的一些可以直接看图：[效果](http://www.ershing.cn/example/some-graph)
+        还有其他的一些可以直接看图：[效果](http://www.ershing.cn/example/some-graph.html)
 
         参考源码（反正我也是摘抄的）：[源码](https://github.com/ershing/RookieAngle/blob/master/WebFront/someGraph.html)
 

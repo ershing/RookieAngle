@@ -36,7 +36,7 @@
 ### * [Node.js简单爬虫爬取python一些函数](https://github.com/ershing/RookieAngle/blob/master/python/toPython.md "Node.js简单爬虫爬取python一些函数")
 ### * [python中函数的参数类型](https://github.com/ershing/RookieAngle/blob/master/python/pythonFuncParams.md "python中函数的参数类型")
 ### * [python中的面向对象编程](https://github.com/ershing/RookieAngle/blob/master/python/oop.md "python中的面向对象编程")
-### * [python中的文献检索之关键词检索](https://github.com/ershing/RookieAngle/blob/master/python/searchByKeyWord.md "python中的文献检索之关键词检索")<br>
+### * [python中的文献检索之关键词检索](https://github.com/ershing/RookieAngle/blob/master/python/search.py "python中的文献检索之关键词检索")<br>
 
 ## 菜鸟角度
 所有文章均由本作者原创，经查询多篇资料并结合个人理解编写。<br>

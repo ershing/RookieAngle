@@ -80,5 +80,5 @@ testInner[ind] = re.sub('!?\w+', change, each)
 
         其实这里面直接替换为True和False其实是一个bug，因为如果测试的语句如果有True或False就会出问题了，可以替换为两个uuid，最后返回才输出布尔值。
 
-        废话少说，直接贴一下最原始最粗糙的整个代码：[代码文件]()
+        废话少说，直接贴一下最原始最粗糙的整个代码：[代码文件](https://github.com/ershing/RookieAngle/blob/master/python/search.py)
 

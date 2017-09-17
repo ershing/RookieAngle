@@ -24,7 +24,8 @@
 ### * [大文件分块上传、断点续传](https://github.com/ershing/RookieAngle/blob/master/WebFront/bigFileUpload.md "大文件分块上传、断点续传")
 ### * [CSS样式参考配色](https://github.com/ershing/RookieAngle/blob/master/WebFront/easyColorMatch.md "CSS样式参考配色")
 ### * [CSS3中的图形](https://github.com/ershing/RookieAngle/blob/master/WebFront/easyGraph.md "CSS3中的图形")
-### * [HTML5中的简单过渡效果](https://github.com/ershing/RookieAngle/blob/master/WebFront/easyTransition.md "HTML5中的简单过渡效果")<br>
+### * [HTML5中的简单过渡效果](https://github.com/ershing/RookieAngle/blob/master/WebFront/easyTransition.md "HTML5中的简单过渡效果")
+### * [使用ECharts绘制图表](https://github.com/ershing/RookieAngle/blob/master/WebFront/easyEcharts.md "使用ECharts绘制图表")<br>
 
 ## database
 ### * [数据库](https://github.com/ershing/RookieAngle/blob/master/database/introduction.md "数据库")

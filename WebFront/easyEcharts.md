@@ -2,7 +2,7 @@
 ###### 我的菜鸟仓库地址： [点击跳转查看其他相关文章](https://github.com/ershing/RookieAngle "菜鸟仓库")
 ###### 此文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/easy-echarts/ "点击我")
 
-        如果我们想绘制一些图表类的，用框架肯定非常简单就能绘制出我们需要的图表了，其实绘制图表的框架有很多，这里就用ECharts做一个简单的例子，也是非常容易上手的，官网：http://echarts.baidu.com/。
+        如果我们想绘制一些图表类的，用框架肯定非常简单就能绘制出我们需要的图表了，其实绘制图表的框架有很多，这里就用ECharts做一个简单的例子，也是非常容易上手的，官网：[http://echarts.baidu.com/](http://echarts.baidu.com/)。
 
         引入echarts之后，步骤简单分为三步：
 

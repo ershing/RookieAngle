@@ -117,7 +117,7 @@ function runAway(){
 }
 
 function worker(fn){
-    fn();
+    return fn();
 }
 var example = {
     a : 20,
@@ -129,7 +129,7 @@ worker(example.b);
 
         通过这种方式的执行函数，其实已经变味了，这种情况和上面的例子：var c = example.b，然后c( )执行函数式一样的，你只不过通过example.b将这个函数地址传入了worker函数，然后执行而已。
 
-        所以上面这个例子，就是结论中的其他情况咯，严格模式this指向undefined（当然这个例子会报错，因为undefined没有a属性），非严格模式指向全局对象（当然这个例子会打印undefined，因为全局对象没有b属性）。
+        所以上面这个例子，就是结论中的其他情况咯，严格模式this指向undefined（当然这个例子会报错，因为undefined没有a属性），非严格模式指向全局对象（当然这个例子会打印undefined，因为全局对象没有a属性）。
 
         好了，最后再举一下其他例子：
 ```javascript

@@ -1,5 +1,5 @@
 # 关于javascript中的toString()和valueOf()
-###### 我的菜鸟仓库地址： [点击跳转查看其他相关文章](https://github.com/ershing/RookieAngle "菜鸟仓库")
+###### 我GitHub上的菜鸟仓库地址： [点击跳转查看其他相关文章](https://github.com/ershing/RookieAngle "菜鸟仓库")
 ###### 文章在我的博客上的地址： [点击跳转](http://www.ershing.cn/tostring-and-valueof/ "点击我")
 
         关于javascript中的toString()和valueOf()两种方法，其实早在开始读红宝书（JavaScript高级程序设计）的时候已经有点困惑了，怎么搞出来这两个这么相似的东西，重点是很多时候它们得到的结果都是一样的，虽然之后不了了之觉得对应用没什么大影响就不管了，直到现在开始写博客的时候才回头看看这个问题。
@@ -15,7 +15,7 @@
         valueOf( ):返回对象的字符串、数值或布尔值表示。
 
         好了，写几个例子就明白返回结果了（undefined  和 null  的值就不举例了，因为它们都没有这两个方法，所以肯定会报错的）：
-```javascript
+```
 //先看看toString()方法的结果
 var a = 3;
 var b = '3';
@@ -31,7 +31,7 @@ d.toString();// "[object Object]"
 e.toString();// "function (){console.log('example');}"
 f.toString();// "test,example"
 ```
-```javascript
+```
 //再看看valueOf()方法的结果
 var a = 3;
 var b = '3';
@@ -47,15 +47,15 @@ d.valueOf();// {test:'123',example:123}
 e.valueOf();// function(){console.log('example');}
 f.valueOf();// ['test','example']
 ```
-        很清楚了，toString( )就是将其他东西用字符串表示，比较特殊的地方就是，表示对象的时候，变成"[object Object]",表示数组的时候，就变成数组内容以逗号连接的字符串，相当于Array.split(',')。 而valueOf( )就返回它自身了。
+        很清楚了，toString( )就是将其他东西用字符串表示，比较特殊的地方就是，表示对象的时候，变成"[object Object]",表示数组的时候，就变成数组内容以逗号连接的字符串，相当于Array.join(',')。 而valueOf( )就返回它自身了。
 
         至于迷惑的地方，就在于它们在什么时候被调用，举个例子：
-```javascript
+```
 var a = '3';
 console.log(+a);// 3
 ```
         当然了，打印结果是数字3（不是字符串‘3’），因为一元加操作符接在字符串前面就将其转换为数字了（字符串转化为数字的一种方式，相当于Number( )方法），但是如果它应用在对象上，过程是怎样的呢，再举例子：
-```javascript
+```
 //例子一
 var example = {test:'123'};
 console.log(+example);// NaN
@@ -79,14 +79,10 @@ var example = {
 };
 console.log(+example);// 23
 ```
-        通过例子一和例子二的比较，我们可以知道，一元加操作符在操作对象的时候，会先调用对象的valueOf方法来转换，最后再用Number( )方法转换，而通过例子二和例子三的比较，我们可以知道，如果只改写了toString方法，对象则会调用toString方法，证明valueOf的优先级比toString高。上面例子是单独对对象上使用一元加操作符，但是，如果是字符串加对象呢？
-```javascript
-console.log('test'+{});   //"test[object Object]"
-```
-        这个很明显，对象和字符串相加，肯定转换为字符串啊，所以调用了对象的toString方法，变为[object Object]了。
+        通过例子一和例子二的比较，我们可以知道，一元加操作符在操作对象的时候，会先调用对象的valueOf方法来转换，最后再用Number( )方法转换，而通过例子二和例子三的比较，我们可以知道，如果只改写了toString方法，对象则会调用toString方法，证明valueOf的优先级比toString高。
 
         好了，如果是alert呢？
-```javascript
+```
 //例子一
 var example = {test:'123'};
 alert(example);// "[object Object]"
